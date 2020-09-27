@@ -1,0 +1,17 @@
+---
+title: "Sept 27, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=48.067486, lng=12.863197, popup="A beautiful village :)")
+my_map
+```
+
